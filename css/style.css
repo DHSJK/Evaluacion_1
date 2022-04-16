@@ -31,5 +31,50 @@
   .row {
     background-color: rgb(24, 90, 151) !important;
     padding: 20px 50px;
-
 }
+
+
+  .contacto {
+    background-color: rgb(24, 90, 151);
+    padding: 10px 10px;
+    color:aliceblue;
+    margin-top: 5px;
+  }
+
+  .titulo-contacto {
+    margin:auto;
+    text-align: center;
+    font-family: courier, Arial, Helvetica, sans-serif;
+  }
+
+  .btn {
+    color:aliceblue;
+  }
+
+  .donaciones {
+    background-color: rgb(24, 90, 151);
+    padding: 10px 10px;
+    color:aliceblue;
+    margin-top: 5px;
+  }
+
+  .titulo-donaciones {
+    margin:auto;
+    text-align: center;
+    font-family: courier, Arial, Helvetica, sans-serif;
+  }
+
+  .footer {
+    background-color: rgb(24, 90, 151);
+    padding: 4rem 0;
+    text-align: center;
+    margin-top: -1rem;
+  }
+
+  .footer-container {
+    width: 85%;
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    color:aliceblue;
+  }
