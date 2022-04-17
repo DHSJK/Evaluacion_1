@@ -156,3 +156,15 @@
     border-top-left-radius: calc(0.25rem - 80px);
     border-top-right-radius: calc(0.25rem - 80px);
   }
+  .card {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color:aliceblue;
+  }
+
+  .card-text-2 {
+    color: rgb(170, 163, 163);
+  }
+
+  
