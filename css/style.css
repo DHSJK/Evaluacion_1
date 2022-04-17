@@ -17,21 +17,31 @@
     background-color: rgb(11, 58, 102) !important;
     position: fixed;
     padding: 20px 0px;
+    color: aliceblue;
+    transition: all .3s;
   }
 
   .navbar-var li:hover > ul.dropdown-menu{
       display: block;
   }
+.dropdown-menu {
+  position: absolute;
+  background-color: rgb(11, 58, 102);
+  display: none;
 
-  .dropdown-submenu {
-      position: relative;
-  }
+}
 
-  .dropdown-submenu > .dropdown-menu {
-      top: 0;
-      margin-top: -5px;
-      left: 100%;
-  }
+.dropdown li a{
+  display: block;
+  padding: 15px;
+  color: rgb(255, 255, 255);
+  font-family: open sans-serif;
+  text-decoration: none;
+
+}
+.dropdown li:hover .dropdown-menu{
+  display:block ;
+}
 
 
   .box {
@@ -132,16 +142,15 @@
     background-color: rgb(31, 116, 173);
   }
 
-  .carousel-item {
-    height: 100vh;
-    min-height: 100px;
-    background: no-repeat center center scroll;
-    -webkit-background-size: relative;
-    -moz-background-size: relative;
-    -o-background-size: relative;
-    background-size: relative;
-  }
 
+
+  .d-block {
+    width: 100%;
+    object-fit: cover;
+    position: sticky;
+    border-top-left-radius: calc(0.25rem - 10px);
+    border-top-right-radius: calc(0.25rem - 10px);
+  }
 
 
   
@@ -152,19 +161,34 @@
   
   .card-img-top {
     width: 100%;
-    height: 400px !important;
-    border-top-left-radius: calc(0.25rem - 80px);
-    border-top-right-radius: calc(0.25rem - 80px);
+    position: sticky;
+    height: 300px !important;
+    border-top-left-radius: calc(0.25rem - 10px);
+    border-top-right-radius: calc(0.25rem - 10px);
+    object-fit: cover;
   }
+
+
   .card {
     display: inline-block;
     width: 100%;
     text-align: center;
-    color:aliceblue;
+    color:rgb(7, 21, 32);
+  }
+
+  .card-2 {
+    border: rgb(217, 223, 228);
+    object-fit: cover;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color:rgb(185, 176, 176);
+    background-color: rgb(31, 116, 173);;
   }
 
   .card-text-2 {
     color: rgb(170, 163, 163);
+    background-color: rgb(31, 116, 173);;
   }
 
   
