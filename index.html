@@ -67,8 +67,96 @@
         </div>
       </nav>
     </header> 
-
     <br><br><br><br>
+
+    <div class="MascotaLover">
+      <h1 class="display-4">Bienvenidos a Tu tienda Favorida!</h1>
+      <p class="lead">Aqui podras encontrar los mejores productos para tu regalon de la casa </p>
+      <hr class="my-4">
+      <p>Estamos comprometidos a entregarte los mejores servicios y productos para tu mascota</p>
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">DONAR AQUI</button>
+    
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <h5 id="offcanvasRightLabel">DONAR</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="donaciones">
+            <h1 class="titulo-donaciones">DONACIONES</h1>  
+              <div class="col-12">
+              <form class="row g-3">
+                    
+                    <div class="col-md-6">
+                    <label for="inputnombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="inputnombre" required minlength="3" maxlength="30" pattern="[A-Za-z]+">
+                    </div>
+                    <div class="col-md-6">
+                    <label for="inputapellido" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="inputapellido" required minlength="3" maxlength="30" pattern="[A-Za-z]+">
+                    </div>
+                    <div class="col-md-6">
+                    <label for="inputTelefono" class="form-label">Teléfono</label>
+                    <input type="text" class="form-control" id="inputTelefono" placeholder="9 1234 5678" required pattern="^[9|8|7|6|5]\d{8}$">
+                    </div>
+                    <div class="col-md-6">
+                    <label for="inputEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="tucorreo@dominio.cl" required>
+                    </div>
+                    <div class="col-md-6">
+                    <label for="inputCity" class="form-label">Ciudad</label>
+                    <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="col-md-6">
+                    <label for="inputState" class="form-label">Comuna</label>
+                    <select id="inputState" class="form-select">
+                    <option selected>Elegir...</option>
+                    <option>La Florida</option>
+                    <option>Maipú</option>
+                    <option>Santiago Centro</option>
+                    <option>Pudahuel</option>
+                    <option>Otro</option>
+                    </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputDonacion" class="form-label">Monto a donar</label>
+                    
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">$</span>
+                        <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)">
+                        <span class="input-group-text">Pesos</span>
+                    </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputState" class="form-label">Metodo de pago</label>
+                        <select id="inputState" class="form-select">
+                        <option selected>Elegir...</option>
+                        <option>Credito</option>
+                        <option>Debito</option>
+                        <option>Cuenta Corriente</option>
+                        <option>Transferencia Bancaria</option>
+
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <label for="inputComentario" class="form-label">Comentario</label>
+                        <textarea class="form-control" id="inputComentario" maxlength="140" rows="5"></textarea>
+                    </div>
+
+
+                    <div class="col-12">
+                    <br>
+                    <button type="submit" class="btn btn-primary">DONAR</button>
+                    </div>
+              </form>
+              </div>
+             
+        </div>
+          
+        </div>
+    </div>
+<br><br>
+
 
 
     <!-- programacion de carrusel de imagenes-->
@@ -84,10 +172,11 @@
           <button type="button" data-bs-target="#idcarrusel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#idcarrusel" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#idcarrusel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#idcarrusel" data-bs-slide-to="3" aria-label="Slide 4"></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="img/Perros_1.jpg" class="d-block w-100 " alt="...">
+            <img src="img/Perros_1.jpg" class="d-block w-100 " alt="Tienda"> 
             <div class="carousel-caption d-none d-md-block">
               <h5>Alimentos Adecuado</h5>
               <p>Comida saludable para tus bebes de la casa</p>
@@ -108,8 +197,18 @@
               <h5>Alimentos Adecuado</h5>
               <p>Comida saludable para tus bebes de la casa</p>
             </div>
-
           </div>
+
+          <div class="carousel-item">
+            <img src="img/alimentacion_2.jpg" class="d-block w-100 " alt="...">
+            <div class="carousel-caption d-none d-md-block ">
+              <h5>Alimentos Adecuado</h5>
+              <p>Comida saludable para tus bebes de la casa</p>
+            </div>
+          </div>
+
+
+
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#idcarrusel" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -159,16 +258,7 @@
           </div>
     
     
-          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">DONAR AQUI</button>
-    
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-      <div class="offcanvas-header">
-        <h5 id="offcanvasRightLabel">DONAR</h5>
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        ...
-      </div>
+
     </div>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
